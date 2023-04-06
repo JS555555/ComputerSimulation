@@ -1,16 +1,17 @@
-# This is a sample Python script.
-
-# Press ⌃R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+from approach1 import BoardSimulation
+from approach2 import BoardSimulation_app2
 
 
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌘F8 to toggle the breakpoint.
+
+def main():
+    simulation = BoardSimulation()
+    simulation.run_simulation(show_simulation=True)
+    simulation.simulation_result()
+
+    simulation_2 = BoardSimulation_app2()
+    simulation_2.run_simulation(show_simulation=True)
+    simulation_2.simulation_result()
 
 
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+if __name__ == "__main__":
+    main()
