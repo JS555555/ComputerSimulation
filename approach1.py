@@ -90,3 +90,10 @@ class BoardSimulation:
 
                 self.game_iterations += 1
 
+    def simulation_result(self):
+        """shows simulation result"""
+
+        print(f'\nPenality function result:  {self.penalty_function}')
+        print(f'Reward function result:    {self.reward_function}')
+        self.objective_function = self.reward_function - self.penalty_function
+        print(f'Objective funtion result:  {self.objective_function}')
